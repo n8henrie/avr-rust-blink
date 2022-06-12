@@ -3,3 +3,6 @@ target = "avr-unknown-gnu-atmega328"
 
 [unstable]
 build-std = [ "core" ]
+
+[target.'cfg(target_arch = "avr")']
+runner = "ravedude uno -cb 57600"
